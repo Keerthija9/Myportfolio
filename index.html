@@ -62,7 +62,7 @@
         h2 {
             margin-bottom: 20px;
             text-align: center;
-            color: #8b4513;
+            color: coral;
         }
 
         .profile {
@@ -113,7 +113,7 @@
         .project-details {
             display: none;
             padding: 20px;
-            background: white;
+            background: lightcoral;
             border-radius: 10px;
 	    color: black;
             box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
@@ -136,8 +136,11 @@
             justify-content: center;
             gap: 20px;
         }
-	.skills {
-	     list-type:none;
+	.skills ul{
+		list-style:none;
+	}
+	.project-details ul{
+		list-style:none;
 	}
 
         .footer-icons a {
@@ -177,42 +180,49 @@
         <h2>Projects</h2>
         <div class="projects-grid">
             <div class="project-card" onclick="showProject('project2')">
-                <img src="project2.jpg" alt="Project 2">
                 <h3>Gasoline Pricing Analysis</h3>
                 <p>Data-driven pricing analysis using Python and Machine Learning techniques</p>
             </div>
             <div class="project-card" onclick="showProject('project3')">
-                <img src="project3.jpg" alt="Project 3">
                 <h3>DegreeWorks User Interface</h3>
                 <p>Redesigned the Degree Works user interface(a portal) using data-driven research and user insights</p>
             </div>
             <div class="project-card" onclick="showProject('project4')">
-                <img src="project4.jpg" alt="Project 4">
-                <h3>Data Visualization Project</h3>
+                <h3>Gender Pay Analysis</h3>
                 <p>Advanced dashboards showcasing key insights.</p>
             </div>
         </div>
 
         <div id="project2" class="project-details">
             <h3>Gasoline Pricing Analysis</h3>
-            <p>I accomplished a data mining project, analyzing fuel price variations using the ETL process with data sets from sources such as GasBuddy and the EIA (436 records, 12 variables), extracting, cleaning, and transforming data with Pandas by addressing missing values, encoding categorical variables, and engineering features like tax-adjusted prices.
-		Exploratory data analysis (EDA) was performed using Matplotlib and Seaborn, with data visualizations such as scatter plots, histograms, and correlation matrices used to identify trends.
-		Applied machine learning techniques to data models, including Forward Selection Linear Regression, PCA-enhanced Linear Regression, and Random Forest Regression (achieving the best accuracy with Random Forest based on RMSE and MAE), and performed K-means clustering to segment the dataset into four distinct clusters, uncovering market-specific pricing behaviors influenced by economic and geographic factors.
-	    </p>
+            <ul>
+		<li>I accomplished a data mining project, analyzing fuel price variations using the ETL process with data sets from sources such as GasBuddy and the EIA (436 records, 12 variables), extracting, cleaning, and transforming data with Pandas by addressing missing values, encoding categorical variables, and engineering features like tax-adjusted prices.</li>
+		<li>Exploratory data analysis (EDA) was performed using Matplotlib and Seaborn, with data visualizations such as scatter plots, histograms, and correlation matrices used to identify trends.</li>
+		<li>Applied machine learning techniques to data models, including Forward Selection Linear Regression, PCA-enhanced Linear Regression, and Random Forest Regression (achieving the best accuracy with Random Forest based on RMSE and MAE), and performed K-means clustering to segment the dataset into four distinct clusters, uncovering market-specific pricing behaviors influenced by economic and geographic factors.</li>
+	    </ul>
             <a href="https://nbviewer.org/github/Keerthija9/Myportfolio/blob/main/Analysis_Of_Fuel_Prices.ipynb">View Project</a>
         </div>
 
         <div id="project3" class="project-details">
             <h3>Degree Works User Interface</h3>
-            <p>Conducted data-driven research and analysis of student feedback to redesign the user interface for Degree Works(a student portal), achieving a 30% increase in user satisfaction.
-	    Gathered and analyzed user insights through surveys and feedback sessions to inform a user-centered design approach.
-	    Leveraged HTML and Mockit for prototyping and wireframing, ensuring the interface was optimized for both mobile and laptop use</p>
+            <ul>
+		    <li>Conducted data-driven research and analysis of student feedback to redesign the user interface for Degree Works(a student portal), achieving a 30% increase in user satisfaction.</li>
+	    	    <li>Gathered and analyzed user insights through surveys and feedback sessions to inform a user-centered design approach.</li>
+	            <li>Leveraged HTML and Mockit for prototyping and wireframing, ensuring the interface was optimized for both mobile and laptop use</li>
+	    </ul>
 	    <img src="https://github.com/Keerthija9/Myportfolio/blob/main/Degreeworks(1).gif?raw=true" alt="Project_mock" width = 200px>
 	    <img src="https://github.com/Keerthija9/Myportfolio/blob/main/DegreeWorks(2).gif?raw=true" alt="Project_mock" width = 200px>
 	    
             <h4>Preview of Interface</h4>
         </div>
-
+	<div id="project4" class="project-details">
+            <h3>Gender Pay Analysis</h3>
+            <ul>
+		<li>The project analyzes the gender pay gap using data from the United States Census Bureau spanning from 1960 to 2022, focusing on total and full-time workers.</li>
+		<li>Hypothesis testing, t-tests, and ANOVA were conducted in RStudio, revealing statistically significant earnings disparities, with males consistently earning more than females.</li>
+		<li>The findings confirm the existence of a gender pay gap, emphasizing the need for continued efforts to address income inequality.</li>
+            <a href="https://github.com/Keerthija9/GenderPayAnalysis.git">View Project</a>
+        </div>
 
     </section>
 
